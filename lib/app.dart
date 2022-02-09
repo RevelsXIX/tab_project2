@@ -16,18 +16,6 @@ class App extends StatelessWidget {
   }
 }
 
-// class Icon extends StatelessWidget {
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'Flutter Demo',
-//       theme: ThemeData(primarySwatch: Colors.red),
-//       home: MainTabController()
-//     );
-//   }
-// }
-
 
 
 class MainTabController extends StatelessWidget {
@@ -39,9 +27,6 @@ class MainTabController extends StatelessWidget {
   ];
 
   final screens = [AlphaScreen(), BravoScreen(), CharlieScreen()];
-
-  Widget? icon;
-
 
   @override
   Widget build(BuildContext context) {
