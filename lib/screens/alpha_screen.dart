@@ -7,7 +7,6 @@ class AlphaScreen extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.indigo[900],
         body: Column( 
-          // mainAxisAlignment: MainAxisAlignment.center,
           children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.center,    
