@@ -63,20 +63,22 @@ class AlphaScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center, 
             children: [
               Expanded(child: 
-            SizedBox(
+            SizedBox(child: GestureDetector(
+              onTap: () => launch('https://www.chaoskilledrocks.com'),
               child: Text(
-              "chaoskilledrocks.com",
-              textAlign: TextAlign.center, 
+              "chaoskilledrocks.com", 
+              textAlign: TextAlign.center,
               style: TextStyle(
                       fontSize: 15, 
                       color: Colors.greenAccent[700],
                       fontFamily: 'Open Sans',
                       fontWeight: FontWeight.normal
-                      )),
-            // width: 100,
-            height: 20)),
+                      ))),
+             height: 20),),
             Expanded(child: 
-            SizedBox(child: Text(
+            SizedBox(child: GestureDetector(
+              onTap: () => launch('mailto:smith@example.com?subject=Hey&body=Hey'),
+              child: Text(
               "jrevels@freebeer.com",
               textAlign: TextAlign.center, 
               style: TextStyle(
@@ -84,7 +86,7 @@ class AlphaScreen extends StatelessWidget {
                       color: Colors.greenAccent[700],
                       fontFamily: 'Open Sans',
                       fontWeight: FontWeight.normal
-                      )),
+                      ))),
             // width: 100,
             height: 20
           )
