@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AlphaScreen extends StatelessWidget {
   @override
@@ -46,14 +47,16 @@ class AlphaScreen extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center, 
             children: [
-            SizedBox(child: Text(
+            SizedBox(child: GestureDetector(
+              onTap: () => launch('sms:14126662337'),
+              child: Text(
               "412 666 2337", 
               style: TextStyle(
                       fontSize: 18, 
                       color: Colors.greenAccent[700],
                       fontFamily: 'Open Sans',
                       fontWeight: FontWeight.normal
-                      )),
+                      ))),
              height: 26),
           ]),
           Row(
@@ -62,10 +65,10 @@ class AlphaScreen extends StatelessWidget {
               Expanded(child: 
             SizedBox(
               child: Text(
-              "412 666 2337",
+              "chaoskilledrocks.com",
               textAlign: TextAlign.center, 
               style: TextStyle(
-                      fontSize: 18, 
+                      fontSize: 15, 
                       color: Colors.greenAccent[700],
                       fontFamily: 'Open Sans',
                       fontWeight: FontWeight.normal
@@ -74,10 +77,10 @@ class AlphaScreen extends StatelessWidget {
             height: 20)),
             Expanded(child: 
             SizedBox(child: Text(
-              "412 666 2337",
+              "jrevels@freebeer.com",
               textAlign: TextAlign.center, 
               style: TextStyle(
-                      fontSize: 18, 
+                      fontSize: 15, 
                       color: Colors.greenAccent[700],
                       fontFamily: 'Open Sans',
                       fontWeight: FontWeight.normal
