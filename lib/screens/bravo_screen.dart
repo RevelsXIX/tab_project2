@@ -24,7 +24,7 @@ class BravoScreen extends StatelessWidget {
               ),
               child: IntrinsicHeight(
                   child: Column(
-                    children: <Widget>[
+                    children: [
                       HeaderWidget(),
                         EntryWidget(), EntryWidget(), EntryWidget(),
                       EntryWidget(), EntryWidget(), EntryWidget(),

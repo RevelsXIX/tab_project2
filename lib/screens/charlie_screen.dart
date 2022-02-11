@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '/components/answer.dart';
+import '../models/answer.dart';
 
 
 class CharlieScreen extends StatefulWidget {
@@ -13,8 +13,6 @@ class CharlieScreen extends StatefulWidget {
 class _CharlieScreenState extends State<CharlieScreen> {
 
   final answer = Answer();
-
-
 
   @override
   Widget build(BuildContext context) {
