@@ -15,6 +15,8 @@ class Styles {
   static final textSizeLarge = 25.0;
   static final textSizeDefault = 18.0;
   static const textSizeSmall = 15.0;
+  static const textSizeTiny = 13.0;
+  static const textSizeMoreTiny = 10.0;
 
 
   static final textDefault = TextStyle(
@@ -42,9 +44,26 @@ class Styles {
     color: textColorBright,
   );
 
+  static final resumeTextBold = TextStyle(
+    fontFamily: fontNameDefault,
+    fontWeight: FontWeight.bold,
+    fontSize: textSizeLarge
+  );
+
+  static final resumeJobTitle = TextStyle(
+    fontFamily: fontNameDefault,
+    fontWeight: FontWeight.bold,
+    fontSize: textSizeSmall
+  );
+
+  static final resumeTextNormal = TextStyle(
+    fontFamily: fontNameDefault,
+    fontSize: textSizeTiny
+  );
 
 
-  // static final navBarTitle = TextStyle(
+
+// static final navBarTitle = TextStyle(
   //   fontFamily: fontNameDefault,
   //   fontWeight: FontWeight.w600,
   //   fontSize: textSizeDefault,

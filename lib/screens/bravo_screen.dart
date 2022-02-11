@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tab_project/components/resumeHeader.dart';
 import '/components/resumeEntry.dart';
-// import '../styles.dart';
 
 class BravoScreen extends StatelessWidget {
 

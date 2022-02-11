@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lorem/flutter_lorem.dart';
+import '../styles.dart';
 
 
 class EntryWidget extends StatefulWidget {
@@ -18,12 +19,7 @@ class _EntryWidgetState extends State<EntryWidget> {
                 children: [
                   Text(
                     "Quality Assurance Intern",
-                    style: TextStyle(
-                        fontSize: 15,
-                        // color: Colors.greenAccent[700],
-                        fontFamily: 'Open Sans',
-                        fontWeight: FontWeight.bold
-                    ),
+                    style: Styles.resumeJobTitle,
                   )
                 ],
               ),
@@ -32,36 +28,24 @@ class _EntryWidgetState extends State<EntryWidget> {
                   Expanded(
                       child: Text(
                         "Beer Corp",
-                        style: TextStyle(
-                            fontSize: 13,
-                            fontFamily: 'Open Sans'
-                        ),
+                        style: Styles.resumeTextNormal,
                       )),
                   Expanded(
                       child: Text(
                         "2020 - Present",
-                        style: TextStyle(
-                            fontSize: 13,
-                            fontFamily: 'Open Sans'
-                        ),
+                        style: Styles.resumeTextNormal,
                       )),
                   Expanded(
                       child: Text(
                         "Pittsburgh, PA",
-                        style: TextStyle(
-                            fontSize: 13,
-                            fontFamily: 'Open Sans'
-                        ),
+                        style: Styles.resumeTextNormal,
                       )),
                 ],
               ),
               Row(
                   children: [Flexible(child:
                   Text(lorem(paragraphs: 1, words: 20),
-                    style: TextStyle(
-                        fontSize: 13,
-                        fontFamily: 'Open Sans'
-                    ),)
+                    style: Styles.resumeTextNormal,)
                   )]
               )
             ])

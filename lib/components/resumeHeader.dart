@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../styles.dart';
 
 
 class HeaderWidget extends StatefulWidget {
@@ -16,22 +17,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
             children: [
               SizedBox(child: Text(
                   "Joshua Revels",
-                  style: TextStyle(
-                      fontSize: 25,
-                      fontFamily: 'Open Sans',
-                      fontWeight: FontWeight.bold
-                  )),
+                  style: Styles.resumeTextBold),
                   height: 28),
             ]),
         Row(
             children: [
               SizedBox(child: Text(
                   "jrevels@freebeer.com",
-                  style: TextStyle(
-                      fontSize: 15,
-                      fontFamily: 'Open Sans',
-                      fontWeight: FontWeight.normal
-                  )),
+                  style: Styles.resumeTextNormal),
                   height: 20),
             ]),
         Row(
@@ -39,11 +32,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
               SizedBox(
                   child: Text(
                       "https://chaoskilledrocks.com",
-                      style: TextStyle(
-                          fontSize: 15,
-                          fontFamily: 'Open Sans',
-                          fontWeight: FontWeight.normal
-                      )),
+                      style: Styles.resumeTextNormal),
                   height: 26),
             ])],
     );
