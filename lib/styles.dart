@@ -11,7 +11,7 @@ class Styles {
   static final Color textColorFaint = _hexToColor('999999');
   static final Color textColorBright = _hexToColor('3ED65A');
   static final Color accentColor = _hexToColor('FF0000');
-  static final String fontNameDefault = 'Open Sans';
+  static final String fontNameDefault = 'Yantramanav';
   static final textSizeLarge = 25.0;
   static final textSizeDefault = 18.0;
   static const textSizeSmall = 15.0;
