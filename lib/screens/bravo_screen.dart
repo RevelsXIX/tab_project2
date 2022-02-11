@@ -26,12 +26,10 @@ class BravoScreen extends StatelessWidget {
                   child: Column(
                     children: <Widget>[
                       HeaderWidget(),
-                        EntryWidget(), EntryWidget(), EntryWidget(), EntryWidget(),
-                      EntryWidget(), EntryWidget(), EntryWidget(), EntryWidget(),
-                      EntryWidget(), EntryWidget(), EntryWidget(), EntryWidget(),
-                      EntryWidget(), EntryWidget(), EntryWidget(), EntryWidget(),
-                      EntryWidget(), EntryWidget(), EntryWidget(), EntryWidget(),
-
+                        EntryWidget(), EntryWidget(), EntryWidget(),
+                      EntryWidget(), EntryWidget(), EntryWidget(),
+                      EntryWidget(), EntryWidget(), EntryWidget(),
+                      EntryWidget(), EntryWidget(), EntryWidget()
                     ],
                   )),
             ),

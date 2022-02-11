@@ -13,7 +13,6 @@ class _HeaderWidgetState extends State<HeaderWidget> {
     return Column(
       children: [
         Row(
-
             children: [
               SizedBox(child: Text(
                   "Joshua Revels",
@@ -25,7 +24,6 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                   height: 28),
             ]),
         Row(
-
             children: [
               SizedBox(child: Text(
                   "jrevels@freebeer.com",
@@ -37,7 +35,6 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                   height: 20),
             ]),
         Row(
-
             children: [
               SizedBox(
                   child: Text(
@@ -48,7 +45,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                           fontWeight: FontWeight.normal
                       )),
                   height: 26),
-            ])],);
+            ])],
+    );
   }
-
 }
