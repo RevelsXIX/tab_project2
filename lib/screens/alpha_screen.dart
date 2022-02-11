@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../styles.dart';
 
 class AlphaScreen extends StatelessWidget {
   @override
@@ -22,12 +23,7 @@ class AlphaScreen extends StatelessWidget {
             children: [
             SizedBox(child: Text(
               "Joshua Revels", 
-              style: TextStyle(
-                      fontSize: 25, 
-                      color: Colors.greenAccent[700],
-                      fontFamily: 'Open Sans',
-                      fontWeight: FontWeight.bold
-                      )),
+              style: Styles.businessCardTextBold),
              height: 26),
           ]),
           Row(
@@ -35,12 +31,7 @@ class AlphaScreen extends StatelessWidget {
             children: [
             SizedBox(child: Text(
               "Drinker of Brews", 
-              style: TextStyle(
-                      fontSize: 18, 
-                      color: Colors.greenAccent[700],
-                      fontFamily: 'Open Sans',
-                      fontWeight: FontWeight.normal
-                      )),
+              style: Styles.businessCardTextNormal),
              height: 26),
           ]),
           Row(
@@ -49,46 +40,31 @@ class AlphaScreen extends StatelessWidget {
             SizedBox(child: GestureDetector(
               onTap: () => launch('sms:14126662337'),
               child: Text(
-              "412 666 2337", 
-              style: TextStyle(
-                      fontSize: 18, 
-                      color: Colors.greenAccent[700],
-                      fontFamily: 'Open Sans',
-                      fontWeight: FontWeight.normal
-                      ))),
+              "412 666 2337",
+                  style: Styles.businessCardTextNormal)
+            ),
              height: 26),
           ]),
           Row(
             mainAxisAlignment: MainAxisAlignment.center, 
             children: [
               Expanded(child: 
-            SizedBox(child: GestureDetector(
-              onTap: () => launch('https://www.chaoskilledrocks.com'),
-              child: Text(
-              "chaoskilledrocks.com", 
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                      fontSize: 15, 
-                      color: Colors.greenAccent[700],
-                      fontFamily: 'Open Sans',
-                      fontWeight: FontWeight.normal
-                      ))),
-             height: 20),),
-            Expanded(child: 
-            SizedBox(child: GestureDetector(
-              onTap: () => launch('mailto:smith@example.com?subject=Hey&body=Hey'),
-              child: Text(
-              "jrevels@freebeer.com",
-              textAlign: TextAlign.center, 
-              style: TextStyle(
-                      fontSize: 15, 
-                      color: Colors.greenAccent[700],
-                      fontFamily: 'Open Sans',
-                      fontWeight: FontWeight.normal
-                      ))),
-            // width: 100,
-            height: 20
-          )
+                SizedBox(child: GestureDetector(
+                  onTap: () => launch('https://www.chaoskilledrocks.com'),
+                  child: Text(
+                  "chaoskilledrocks.com",
+                  textAlign: TextAlign.center,
+                  style: Styles.businessCardTextSmall)),
+                 height: 20),),
+              Expanded(child:
+                SizedBox(child: GestureDetector(
+                    onTap: () => launch('mailto:smith@example.com?subject=Hey&body=Hey'),
+                    child: Text(
+                    "jrevels@freebeer.com",
+                    textAlign: TextAlign.center,
+                    style: Styles.businessCardTextSmall)),
+                height: 20
+                )
           )])
       ])
     );

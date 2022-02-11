@@ -5,7 +5,6 @@ import 'package:flutter_lorem/flutter_lorem.dart';
 class EntryWidget extends StatefulWidget {
   @override
   _EntryWidgetState createState() => _EntryWidgetState();
-
 }
 
 class _EntryWidgetState extends State<EntryWidget> {
@@ -65,8 +64,7 @@ class _EntryWidgetState extends State<EntryWidget> {
                     ),)
                   )]
               )
-
-            ]));
+            ])
+    );
   }
-
 }

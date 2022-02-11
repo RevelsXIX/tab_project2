@@ -4,8 +4,6 @@ import '../models/answer.dart';
 
 class CharlieScreen extends StatefulWidget {
 
-
-
   @override
   _CharlieScreenState createState() => _CharlieScreenState();
 }

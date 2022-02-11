@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tab_project/components/resumeHeader.dart';
 import '/components/resumeEntry.dart';
+// import '../styles.dart';
 
 class BravoScreen extends StatelessWidget {
 
@@ -11,9 +12,7 @@ class BravoScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTextStyle(
-      style: Theme.of(context).textTheme.bodyText2!,
-      child: LayoutBuilder(
+    return LayoutBuilder(
         builder: (BuildContext context, BoxConstraints viewportConstraints) {
           return SingleChildScrollView(
             child: Padding(
@@ -35,7 +34,6 @@ class BravoScreen extends StatelessWidget {
             ),
           ));
         },
-      ),
-    );
+      );
   }
 }
