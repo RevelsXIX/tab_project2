@@ -7,7 +7,7 @@ class CharlieScreen extends StatefulWidget {
 
 
   @override
-  State<CharlieScreen> createState() => _CharlieScreenState();
+  _CharlieScreenState createState() => _CharlieScreenState();
 }
 
 class _CharlieScreenState extends State<CharlieScreen> {
@@ -40,7 +40,9 @@ class _CharlieScreenState extends State<CharlieScreen> {
                     SizedBox(child: Align(
                         alignment: Alignment.center,
                         child: GestureDetector(
-                          onTap: () {setState( () {answer.returnAnswerString();});},
+                          onTap: () {setState( () {
+                            answer.returnAnswerString();});
+                            },
                           child: Text(
                             "Ask a Question...tap here for answer",
                             style: TextStyle(
@@ -61,7 +63,6 @@ class _CharlieScreenState extends State<CharlieScreen> {
                     ),
                         height: 50),
                   ]),
-
             ])
     );
   }
