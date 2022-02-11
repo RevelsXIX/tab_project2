@@ -61,7 +61,7 @@ class _CharlieScreenState extends State<CharlieScreen> {
                     SizedBox(child: Text(
                       '${answer.currentValue}'
                     ),
-                        height: 100),
+                        height: 50),
                   ]),
 
             ])
